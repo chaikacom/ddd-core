@@ -2,7 +2,7 @@
 
 namespace Zelenin\Ddd\Core\Domain\Traits;
 
-use Zelenin\Ddd\Core\Domain\Object\Object;
+use Zelenin\Ddd\Core\Domain\Object\ObjectInterface;
 
 /**
  * @method static className()
@@ -10,11 +10,11 @@ use Zelenin\Ddd\Core\Domain\Object\Object;
 trait SameTypeAs
 {
     /**
-     * @param Object $object
+     * @param ObjectInterface $object
      *
      * @return bool
      */
-    final public function sameTypeAs(Object $object)
+    final public function sameTypeAs(ObjectInterface $object)
     {
         return static::className() === $object::className();
     }

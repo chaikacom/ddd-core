@@ -3,8 +3,8 @@
 namespace Zelenin\Ddd\Core\Domain\Model;
 
 use Zelenin\Ddd\Core\Domain\Contract\HasEqualsTo;
-use Zelenin\Ddd\Core\Domain\Object\Object;
+use Zelenin\Ddd\Core\Domain\Object\ObjectInterface;
 
-interface ValueObject extends Object, HasEqualsTo
+interface ValueObject extends ObjectInterface, HasEqualsTo
 {
 }

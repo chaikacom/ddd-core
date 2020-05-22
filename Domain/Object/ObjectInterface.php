@@ -6,6 +6,6 @@ use Zelenin\Ddd\Core\Domain\Contract\HasClassName;
 use Zelenin\Ddd\Core\Domain\Contract\HasSameTypeAs;
 use Zelenin\Ddd\Core\Domain\Contract\HasTypeOf;
 
-interface Object extends HasClassName, HasSameTypeAs, HasTypeOf
+interface ObjectInterface extends HasClassName, HasSameTypeAs, HasTypeOf
 {
 }

@@ -2,14 +2,14 @@
 
 namespace Zelenin\Ddd\Core\Domain\Contract;
 
-use Zelenin\Ddd\Core\Domain\Object\Object;
+use Zelenin\Ddd\Core\Domain\Object\ObjectInterface;
 
 interface HasEqualsTo
 {
     /**
-     * @param Object $object
+     * @param ObjectInterface $object
      *
      * @return bool
      */
-    public function equalsTo(Object $object);
+    public function equalsTo(ObjectInterface $object);
 }

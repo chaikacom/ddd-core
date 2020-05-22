@@ -5,7 +5,7 @@ namespace Zelenin\Ddd\Core\Domain\Model;
 use Zelenin\Ddd\Core\Domain\Exception\NotMatchTypeException;
 use Zelenin\Ddd\Core\Domain\Model\Id\Id;
 use Zelenin\Ddd\Core\Domain\Object\DefaultObject;
-use Zelenin\Ddd\Core\Domain\Object\Object;
+use Zelenin\Ddd\Core\Domain\Object\ObjectInterface;
 
 abstract class DefaultEntity extends DefaultObject implements Entity
 {
@@ -19,7 +19,7 @@ abstract class DefaultEntity extends DefaultObject implements Entity
      *
      * @return bool
      */
-    public function equalsTo(Object $object)
+    public function equalsTo(ObjectInterface $object)
     {
         if (!$this->sameTypeAs($object)) {
             throw new NotMatchTypeException($this);
