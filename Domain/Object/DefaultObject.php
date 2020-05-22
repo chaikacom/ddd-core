@@ -6,7 +6,7 @@ use Zelenin\Ddd\Core\Domain\Traits\ClassName;
 use Zelenin\Ddd\Core\Domain\Traits\SameTypeAs;
 use Zelenin\Ddd\Core\Domain\Traits\TypeOf;
 
-abstract class DefaultObject implements Object
+abstract class DefaultObject implements ObjectInterface
 {
     use ClassName;
     use SameTypeAs;
